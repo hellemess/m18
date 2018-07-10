@@ -1,0 +1,48 @@
+html
+{
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after
+{
+  box-sizing: inherit;
+}
+
+html > body
+{
+  margin: 0;
+
+  font-family: @font-family;
+  font-size: @primary-font-size;
+  line-height: @primary-line-height;
+
+  color: @primary-color;
+  background: @primary-background;
+}
+
+html > body a {
+  font-size: @secondary-font-size;
+  text-decoration: none;
+
+  color: @primary-color;
+
+  &:hover {
+    color: @secondary-color;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+
+  border: 0;
+}

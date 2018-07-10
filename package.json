@@ -1,0 +1,22 @@
+{
+  "name": "m18",
+  "version": "1.0.0",
+  "description": "test task for m18",
+  "scripts": {
+    "build": "gulp build",
+    "start": "npm run build && gulp watch"
+  },
+  "devDependencies": {
+    "autoprefixer": "^8.6.5",
+    "browser-sync": "^2.24.5",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-less": "^3.5.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-svgmin": "^1.2.4",
+    "postcss-preset-env": "^5.2.1",
+    "run-sequence": "^2.2.1"
+  }
+}

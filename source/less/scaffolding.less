@@ -15,25 +15,85 @@ html > body
   margin: 0;
 
   font-family: @font-family;
-  font-size: @primary-font-size;
-  line-height: @primary-line-height;
+  font-size: @medium-size;
+  line-height: @large-height;
 
   color: @primary-color;
-  background: @primary-background;
+  background: @body-background;
 }
 
-html > body a {
-  font-size: @secondary-font-size;
+html > body > main h2
+{
+  margin: 0;
+
+  font-size: @h2-size;
+  font-weight: @medium;
+  line-height: @h2-height;
+  letter-spacing: -0.1px;
+}
+
+html > body a
+{
+  font-size: @large-size;
   text-decoration: none;
 
   color: @primary-color;
 
-  &:hover {
+  &:hover
+  {
     color: @secondary-color;
   }
 }
 
-.visually-hidden {
+html > body button
+{
+  font: inherit;
+
+  background: none;
+
+  border: none;
+}
+
+html > body button.button
+{
+  min-width: 250px;
+  padding-top: 14px;
+  padding-right: 30px;
+  padding-bottom: 12px;
+  padding-left: 30px;
+
+  text-align: center;
+
+  color: @tertiary-color;
+
+  background: @button-background;
+
+  border-radius: 30px;
+  box-shadow: @medium-shadow;
+
+  &:hover
+  {
+    background: @button-hover-background;
+
+    box-shadow: @large-shadow;
+  }
+}
+
+html > body small.subheading {
+  display: block;
+
+  margin-top: 7px;
+
+  font: inherit;
+  font-weight: @medium;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+
+  color: @quinary-color;
+}
+
+html > body .visually-hidden
+{
   position: absolute;
 
   overflow: hidden;

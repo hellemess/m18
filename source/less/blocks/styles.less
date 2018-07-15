@@ -1,0 +1,106 @@
+html > body > main > section.styles
+{
+  margin-top: 183px;
+}
+
+html > body > main > section.styles > h2,
+html > body > main > section.styles > small
+{
+  width: 52.1%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+html > body > main > section.styles > div
+{
+  position: relative;
+
+  overflow: hidden;
+
+  width: 100%;
+  margin-top: 52px;
+}
+
+html > body > main > section.styles > div > div.buttons
+{
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  z-index: 1;
+
+  transform: translateX(342px);
+}
+
+html > body > main > section.styles > div > div.buttons > button
+{
+  width: 23px;
+  height: 45px;
+
+  background: url('../images/icons/arrow.svg') 0 50% no-repeat transparent;
+  background-size: contain;
+
+  &:hover
+  {
+    background-image: url('../images/icons/arrow-hover.svg');
+  }
+}
+
+html > body > main > section.styles > div > div.buttons > button.previous
+{
+  margin-right: 28px;
+
+  transform: rotate(180deg);
+}
+
+html > body > main > section.styles > div > div.slider
+{
+  position: relative;
+  left: -916px;
+
+  display: flex;
+
+  margin-left: 23.95%;
+}
+
+html > body > main > section.styles > div > div.slider > figure
+{
+  display: flex;
+
+  padding-right: 145px;
+  margin: 0;
+
+  opacity: 0.6;
+}
+
+html > body > main > section.styles > div > div.slider > figure.show
+{
+  padding-right: 45px;
+
+  opacity: 1;
+}
+
+html > body > main > section.styles > div > div.slider > figure > img
+{
+  width: 750px;
+  height: 500px;
+  margin-right: 20px;
+
+  object-fit: cover;
+}
+
+html > body > main > section.styles > div > div.slider > figure > figcaption
+{
+  display: none;
+  width: 165px;
+
+  font-size: @small-size;
+  line-height: @huge-height;
+
+  color: @quaternary-color;
+}
+
+html > body > main > section.styles > div > div.slider > figure.show >
+  figcaption
+{
+  display: block;
+}

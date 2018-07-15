@@ -1,0 +1,111 @@
+html > body > main > section.form
+{
+  width: 52.1%;
+  min-width: 750px;
+  padding-bottom: 55px;
+  margin-top: 161px;
+  margin-right: auto;
+  margin-left: auto;
+
+  border: @border;
+}
+
+html > body > main > section.form > h2
+{
+  width: 700px;
+  margin-top: -25px;
+  margin-right: auto;
+  margin-left: auto;
+
+  text-align: center;
+
+  background: @body-background;
+}
+
+html > body > main > section.form > form
+{
+  width: 51.5%;
+  margin-top: 40px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+html > body > main > section.form > form > p
+{
+  width: 370px;
+  padding-top: 11px;
+  padding-bottom: 10px;
+  padding-left: 65px;
+  margin-right: auto;
+  margin-left: auto;
+
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+
+  background: url('../images/icons/form.svg') 0 0 no-repeat transparent;
+  background-size: contain;
+}
+
+html > body > main > section.form > form > input
+{
+  display: block;
+
+  width: 100%;
+  padding-top: 18px;
+  padding-right: 23px;
+  padding-bottom: 16px;
+  padding-left: 23px;
+  margin-top: 30px;
+
+  font: inherit;
+  font-size: @input-size;
+  line-height: @input-height;
+
+  border: @input-border;
+  border-radius: 4px;
+}
+
+html > body > main > section.form > form > input:first-of-type
+{
+  margin-top: 50px;
+}
+
+html > body > main > section.form > form > input::placeholder {
+  color: @quaternary-color;
+}
+
+html > body > main > section.form > form > button
+{
+  display: block;
+
+  margin-top: 47px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+html > body > main > section.form > form > small,
+html > body > main > section.form > form > a
+{
+  display: block;
+
+  font-size: @small-size;
+  line-height: @huge-height;
+  text-align: center;
+}
+
+html > body > main > section.form > form > small
+{
+  margin-top: 23px;
+
+  color: @quaternary-color;
+}
+
+html > body > main > section.form > form > a
+{
+  color: @secondary-color;
+
+  &:hover
+  {
+    text-decoration: underline;
+  }
+}

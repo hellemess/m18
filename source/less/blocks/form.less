@@ -1,18 +1,18 @@
 html > body > main > section.form
 {
   width: 52.1%;
-  min-width: 750px;
+  min-width: 915px;
   padding-bottom: 55px;
   margin-top: 161px;
   margin-right: auto;
   margin-left: auto;
 
-  border: @border;
+  border: @primary-border;
 }
 
 html > body > main > section.form > h2
 {
-  width: 700px;
+  width: 690px;
   margin-top: -25px;
   margin-right: auto;
   margin-left: auto;
@@ -46,7 +46,20 @@ html > body > main > section.form > form > p
   background-size: contain;
 }
 
-html > body > main > section.form > form > input
+html > body > main > section.form > form > div
+{
+  position: relative;
+
+
+  margin-top: 30px;
+}
+
+html > body > main > section.form > form > div:first-of-type
+{
+  margin-top: 50px;
+}
+
+html > body > main > section.form > form > div > input
 {
   display: block;
 
@@ -55,23 +68,65 @@ html > body > main > section.form > form > input
   padding-right: 23px;
   padding-bottom: 16px;
   padding-left: 23px;
-  margin-top: 30px;
 
   font: inherit;
   font-size: @input-size;
   line-height: @input-height;
 
-  border: @input-border;
+  border: @secondary-border;
   border-radius: 4px;
+
+  &:focus
+  {
+    outline: none;
+
+    &::placeholder {
+      color: @tertiary-color;
+    }
+  }
+
+  &::placeholder {
+    color: @quaternary-color;
+  }
+
+  &.error
+  {
+    border-color: @secondary-color;
+  }
 }
 
-html > body > main > section.form > form > input:first-of-type
+html > body > main > section.form > form > div > label
 {
-  margin-top: 50px;
+  position: absolute;
+  top: -8px;
+  left: 20px;
+
+  display: none;
+
+  padding-right: 4px;
+  padding-left: 4px;
+
+  font-size: @small-size;
+
+  color: @quaternary-color;
+  background: @body-background;
 }
 
-html > body > main > section.form > form > input::placeholder {
-  color: @quaternary-color;
+html > body > main > section.form > form > div > input:focus + label
+{
+  display: block;
+}
+
+html > body > main > section.form > form > div > input.error + label {
+  color: @secondary-color;
+}
+
+html > body > main > section.form > form > div > input:required + label
+{
+  &::after
+  {
+    content: '*';
+  }
 }
 
 html > body > main > section.form > form > button

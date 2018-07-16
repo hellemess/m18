@@ -103,9 +103,18 @@
     <h2>Узнайте о запуске сервиса первым</h2>
     <form action="#" method="post">
       <p>Первым 10 клиентам стальная входная дверь в подарок</p>
-      <input type="text" name="name" placeholder="Имя и фамилия*" required/>
-      <input type="email" name="email" placeholder="Е-mail адрес*" required />
-      <input type="tel" name="phone" placeholder="Телефон" />
+      <div>
+        <input type="text" name="name" id="name" placeholder="Имя и фамилия*" required/>
+        <label for="name">Имя и фамилия</label>
+      </div>
+      <div>
+        <input type="email" name="email" id="email" placeholder="E-mail адрес*" required />
+        <label for="email">Е-mail адрес</label>
+      </div>
+      <div>
+        <input type="tel" name="phone" id="phone" placeholder="Телефон" />
+        <label for="phone">Телефон</label>
+      </div>
       <button class="button" type="submit">Подписаться</button>
       <small>* Обязательные для заполнения поля </small>
       <a href="#">Политика конфиденциальности</a>
@@ -129,14 +138,16 @@
       </li>
     </ul>
   </section>
-  <section>
-    <h2>Контакты</h2>
-    <a href="#">+7 (812) 903-54-45</a>
+  <section class="contacts">
+    <h2 class="visually-hidden">Контакты</h2>
+    <a class="phone" href="#">+7 (812) 903-54-45</a>
     <div>
       Ул. Галерная, д 55,
       <small>Санкт-Петербург</small>
     </div>
-    <a href="#">9035445@gmail.com</a>
+    <a class="email" href="#">
+      <span>9035445@gmail.com</span>
+    </a>
   </section>
   <small>© FIX Ремонт, 2016</small>
 </footer>

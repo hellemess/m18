@@ -1,134 +1,139 @@
 html > body > main > section.welcome
 {
-  display: flex;
-  justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 
-  height: 100vh;
-  padding-top: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px;
-  padding-left: 5.85%;
-  margin-top: -103px;
+	height: 100vh;
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-left: 5.85%;
+	margin-top: -103px;
 }
 
 html > body > main > section.welcome > div.container
 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: baseline;
-  align-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: baseline;
+	align-content: center;
 }
 
 html > body > main > section.welcome > div.container > h1
 {
-  max-width: 520px;
-  margin: 0;
-  margin-top: -35px;
+	max-width: 520px;
+	margin: 0;
+	margin-top: -35px;
 
-  font-size: @h1-size;
-  font-weight: @medium;
-  line-height: @h1-height;
-  letter-spacing: -0.5px;
+	font-size: @h1-size;
+	font-weight: @medium;
+	line-height: @h1-height;
+	letter-spacing: -0.5px;
 }
 
 html > body > main > section.welcome > div.container > p
 {
-  width: 100%;
-  margin: 0;
-  margin-top: 25px;
+	width: 100%;
+	margin: 0;
+	margin-top: 25px;
 
-  font-size: @large-size;
-  line-height: @medium-height;
+	font-size: @large-size;
+	line-height: @medium-height;
 }
 
 html > body > main > section.welcome > div.container > button.button
 {
-  display: inline-block;
+	display: inline-block;
 
-  margin-top: 44px;
-  margin-right: 31px;
+	margin-top: 44px;
+	margin-right: 31px;
 }
 
 html > body > main > section.welcome > div.container > small
 {
-  font: inherit;
+	font: inherit;
 
-  color: @quaternary-color;
+	color: @quaternary-color;
 }
 
 html > body > main > section.welcome > div.container > button.scroller
 {
-  position: fixed;
-  left: 6.05%;
-  bottom: 45px;
-  z-index: 1;
+	position: fixed;
+	left: 6.05%;
+	bottom: 45px;
+	z-index: 1;
 
-  padding-left: 55px;
+	padding-left: 55px;
 
-  line-height: @tiny-height;
-  text-align: left;
+	line-height: @tiny-height;
+	text-align: left;
 
-  color: @secondary-color;
+	color: @secondary-color;
 
-  background: url('../images/icons/scroller.svg') 0 0 no-repeat transparent;
+	background: url('../images/icons/scroller.svg') 0 0 no-repeat transparent;
 
-  &:hover
-  {
-    background-image: url('../images/icons/scroller-hover.svg');
-    background-position: 5px 0;
-  }
+	&:hover,
+	&:focus
+	{
+		background-image: url('../images/icons/scroller-hover.svg');
+		background-position: 5px 0;
+	}
+
+	&:focus
+	{
+		outline: none;
+	}
 }
 
 html > body > main > section.welcome > div.video
 {
-  position: relative;
+	position: relative;
 
-  flex-shrink: 0;
-  overflow: hidden;
+	flex-shrink: 0;
+	overflow: hidden;
 
-  width: ~"calc(100vh - 20px)";
-  height: 100%;
+	width: ~"calc(100vh - 20px)";
+	height: 100%;
 
-  background: url('../images/backgrounds/video.jpg') 0 0 no-repeat transparent;
-  background-size: cover;
+	background: url('../images/backgrounds/video.jpg') 0 0 no-repeat transparent;
+	background-size: cover;
 
-  @media (min-resolution: @retina-1),
-    (min-resolution: @retina-2)
-  {
-    background-image: url('../images/backgrounds/video@2x.jpg');
-  }
+	@media (min-resolution: @retina-1),
+		(min-resolution: @retina-2)
+	{
+		background-image: url('../images/backgrounds/video@2x.jpg');
+	}
 }
 
 html > body > main > section.welcome > div.video > video
 {
-  display: none;
+	display: none;
 
-  width: 100%;
-  height: 100%;
+	height: 100%;
 }
 
 html > body > main > section.welcome > div.video > button
 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
 
-  width: 256px;
-  padding-top: 273px;
-  padding-bottom: 0;
+	width: 256px;
+	padding-top: 273px;
+	padding-bottom: 0;
 
-  font-size: @large-size;
+	font-size: @large-size;
 
-  color: @secondary-color;
+	color: @secondary-color;
 
-  background: url('../images/icons/play.svg') 1px 0 no-repeat transparent;
+	background: url('../images/icons/play.svg') 1px 0 no-repeat transparent;
 
-  transform: translate(-50%, -60%);
+	transform: translate(-50%, -60%);
 
-  &:hover
-  {
-    background-image: url('../images/icons/play-hover.svg');
-    background-position: 0 0;
-  }
+	&:hover
+	{
+		background-image: url('../images/icons/play-hover.svg');
+		background-position: 0 0;
+	}
 }

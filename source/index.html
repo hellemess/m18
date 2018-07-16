@@ -1,156 +1,163 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8">
-  <link href="css/style.css" rel="stylesheet">
-  <title>FIX Ремонт</title>
+	<meta charset="utf-8">
+	<link href="css/style.css" rel="stylesheet">
+	<title>FIX Ремонт</title>
 </head>
 <body>
 
 <header>
-  <a class="logo">
-    <img src="images/logo.svg" alt="FIX Ремонт" width="200" height="55"/>
-  </a>
-  <a class="contacts" href="#">Контакты</a>
+	<a class="logo">
+		<img src="images/logo.svg" alt="FIX Ремонт" width="200" height="55"/>
+	</a>
+	<a class="contacts" id="to-footer">Контакты</a>
 </header>
 <main>
-  <section class="welcome">
-    <div class="container">
-      <h1>Ремонт квартир  в типовых домах</h1>
-      <p>
-        Готовый дизайн-проект, работы и материалы 
-        <br />за 3 месяца от 610 т. р.
-      </p>
-      <button class="button" type="button">Узнайте о запуске первым</button>
-      <small>Старт весной 2016</small>
-      <button class="scroller" type="button">
-        Листайте вниз,
-        <br />чтобы ничего не упустить
-      </button>
-    </div>
-    <div class="video">
-      <video>
-        <source src="video/placeholder.mp4" type="video/mp4" />
-        <p>
-          Ваш браузер не поддерживает воспроизведение видео. Скачайте
-          <a href="video/placeholder.mp4">ролик</a>,
-          чтобы посмотреть его.
-        </p>
-      </video>
-      <button type="button">Смотреть видео</button>
-    </div>
-  </section>
-  <section class="advantages">
-    <h2>FIX Ремонт — это легко</h2>
-    <small class="subheading">Готовые проекты, проверенные материалы и умелые
-      руки</small>
-    <ul>
-      <li>
-        <h3>Опытная команда</h3>
-        <p>Команда проектировщиков и строителей со стажем работы более 6 лет</p>
-      </li>
-      <li>
-        <h3>Типовые дизайн-проекты</h3>
-        <p>Три стиля чистовой отделки «под ключ» и спектр дополнительных услуг
-          </p>
-      </li>
-      <li>
-        <h3>Фиксированная смета</h3>
-        <p>
-          Никаких дополнительных расходов во время ремонта. 
-          <br />Расчет стоимости при заключении договора
-        </p>
-      </li>
-    </ul>
-    <div>
-      Срок работ
-      <strong>3 месяца</strong>
-    </div>
-  </section>
-  <section class="styles">
-    <h2>3 стиля интерьера</h2>
-    <small class="subheading">Скандинавский, классический и эко-стиль</small>
-    <div>
-      <div class="buttons">
-        <button class="previous" type="button"
-          aria-label="Предыдущая фотография"></button>
-        <button class="next" type="button" aria-label="Следующая фотография">
-          </button>
-      </div>
-      <div class="slider">
-        <figure>
-          <img src="images/style.jpg" srcset="images/style@2x.jpg 2x"
-            alt="Интерьер" width="750" height="500" />
-          <figcaption>Кафельная плитка в ванной комнате в скандинавском стиле
-            </figcaption>
-        </figure>
-        <figure class="show">
-          <img src="images/style.jpg" srcset="images/style@2x.jpg 2x"
-            alt="Интерьер" width="750" height="500" />
-          <figcaption>Кафельная плитка в ванной комнате в скандинавском стиле
-            </figcaption>
-        </figure>
-        <figure>
-          <img src="images/style.jpg" srcset="images/style@2x.jpg 2x"
-            alt="Интерьер" width="750" height="500" />
-          <figcaption>Кафельная плитка в ванной комнате в скандинавском стиле
-            </figcaption>
-        </figure>
-      </div>
-    </div>
-  </section>
-  <section class="form">
-    <h2>Узнайте о запуске сервиса первым</h2>
-    <form action="#" method="post">
-      <p>Первым 10 клиентам стальная входная дверь в подарок</p>
-      <div>
-        <input type="text" name="name" id="name" placeholder="Имя и фамилия*" required/>
-        <label for="name">Имя и фамилия</label>
-      </div>
-      <div>
-        <input type="email" name="email" id="email" placeholder="E-mail адрес*" required />
-        <label for="email">Е-mail адрес</label>
-      </div>
-      <div>
-        <input type="tel" name="phone" id="phone" placeholder="Телефон" />
-        <label for="phone">Телефон</label>
-      </div>
-      <button class="button" type="submit">Подписаться</button>
-      <small>* Обязательные для заполнения поля </small>
-      <a href="#">Политика конфиденциальности</a>
-    </form>
-  </section>
+	<section class="welcome">
+		<div class="container">
+			<h1>Ремонт квартир  в типовых домах</h1>
+			<p>
+				Готовый дизайн-проект, работы и материалы 
+				<br />за 3 месяца от 610 т. р.
+			</p>
+			<button class="button" type="button" id="to-form">Узнайте о запуске первым
+				</button>
+			<small>Старт весной 2016</small>
+			<button class="scroller" type="button" id="scroller">
+				Листайте вниз,
+				<br />чтобы ничего не упустить
+			</button>
+		</div>
+		<div class="video">
+			<video id="video">
+				<source src="video/placeholder.mp4" type="video/mp4" />
+				<p>
+					Ваш браузер не поддерживает воспроизведение видео. Скачайте
+					<a href="video/placeholder.mp4">ролик</a>,
+					чтобы посмотреть его.
+				</p>
+			</video>
+			<button type="button" id="video-button">Смотреть видео</button>
+		</div>
+	</section>
+	<section class="advantages">
+		<h2>FIX Ремонт — это легко</h2>
+		<small class="subheading">Готовые проекты, проверенные материалы и умелые
+			руки</small>
+		<ul>
+			<li>
+				<h3>Опытная команда</h3>
+				<p>Команда проектировщиков и строителей со стажем работы более 6 лет</p>
+			</li>
+			<li>
+				<h3>Типовые дизайн-проекты</h3>
+				<p>Три стиля чистовой отделки «под ключ» и спектр дополнительных услуг
+					</p>
+			</li>
+			<li>
+				<h3>Фиксированная смета</h3>
+				<p>
+					Никаких дополнительных расходов во время ремонта. 
+					<br />Расчет стоимости при заключении договора
+				</p>
+			</li>
+		</ul>
+		<div>
+			Срок работ
+			<strong>3 месяца</strong>
+		</div>
+	</section>
+	<section class="styles">
+		<h2>3 стиля интерьера</h2>
+		<small class="subheading">Скандинавский, классический и эко-стиль</small>
+		<div id="slider">
+			<div class="buttons">
+				<button class="previous" type="button"
+					aria-label="Предыдущая фотография" id="previous"></button>
+				<button class="next" type="button" aria-label="Следующая фотография"
+					id="next"></button>
+			</div>
+			<div class="slider">
+				<figure>
+					<img src="images/style.jpg" srcset="images/style@2x.jpg 2x"
+						alt="Интерьер" width="750" height="500" />
+					<figcaption>Кафельная плитка в ванной комнате в скандинавском стиле
+						</figcaption>
+				</figure>
+				<figure class="show">
+					<img src="images/style.jpg" srcset="images/style@2x.jpg 2x"
+						alt="Интерьер" width="750" height="500" />
+					<figcaption>Кафельная плитка  в ванной комнате в скандинавском стиле
+						</figcaption>
+				</figure>
+				<figure>
+					<img src="images/style.jpg" srcset="images/style@2x.jpg 2x"
+						alt="Интерьер" width="750" height="500" />
+					<figcaption>Кафельная плитка  в ванной комнате в скандинавском стиле
+						</figcaption>
+				</figure>
+			</div>
+		</div>
+	</section>
+	<section class="form" id="form-section">
+		<h2>Узнайте о запуске сервиса первым</h2>
+		<form action="#" method="post" id="form">
+			<p>Первым 10 клиентам стальная входная дверь в подарок</p>
+			<div>
+				<input type="text" name="name" id="name" placeholder="Имя и фамилия*"
+					required />
+				<label for="name">Имя и фамилия</label>
+			</div>
+			<div>
+				<input type="email" name="email" id="email" placeholder="E-mail адрес*"
+					required />
+				<label for="email">Е-mail адрес</label>
+			</div>
+			<div>
+				<input type="tel" name="phone" id="phone" placeholder="Телефон" />
+				<label for="phone">Телефон</label>
+			</div>
+			<button class="button" type="submit">Подписаться</button>
+			<small>* Обязательные для заполнения поля </small>
+			<a href="#">Политика конфиденциальности</a>
+		</form>
+		<div class="success" id="success">
+			<p>Спасибо! Мы будем держать вас в курсе обновлений</p>
+		</div>
+	</section>
 </main>
-<footer>
-  <section class="social">
-    <h2>Следите за нашим развитием</h2>
-    <p>Подпишитесь на наши аккаунты в соц. сетях, знакомьтесь  с нашими проектами
-      и тем, что нас вдохновляет</p>
-    <ul>
-      <li>
-        <a class="facebook" href="#" aria-label="Facebook"></a>
-      </li>
-      <li>
-        <a class="vk" href="#" aria-label="VK"></a>
-      </li>
-      <li>
-        <a class="instagram" href="#" aria-label="Instagram"></a>
-      </li>
-    </ul>
-  </section>
-  <section class="contacts">
-    <h2 class="visually-hidden">Контакты</h2>
-    <a class="phone" href="#">+7 (812) 903-54-45</a>
-    <div>
-      Ул. Галерная, д 55,
-      <small>Санкт-Петербург</small>
-    </div>
-    <a class="email" href="#">
-      <span>9035445@gmail.com</span>
-    </a>
-  </section>
-  <small>© FIX Ремонт, 2016</small>
+<footer id="footer">
+	<section class="social">
+		<h2>Следите за нашим развитием</h2>
+		<p>Подпишитесь на наши аккаунты в соц. сетях, знакомьтесь  с нашими проектами
+			и тем, что нас вдохновляет</p>
+		<ul>
+			<li>
+				<a class="facebook" href="#" aria-label="Facebook"></a>
+			</li>
+			<li>
+				<a class="vk" href="#" aria-label="VK"></a>
+			</li>
+			<li>
+				<a class="instagram" href="#" aria-label="Instagram"></a>
+			</li>
+		</ul>
+	</section>
+	<section class="contacts">
+		<h2 class="visually-hidden">Контакты</h2>
+		<a class="phone" href="#">+7 (812) 903-54-45</a>
+		<div>
+			Ул. Галерная, д 55,
+			<small>Санкт-Петербург</small>
+		</div>
+		<a class="email" href="#">
+			<span>9035445@gmail.com</span>
+		</a>
+	</section>
+	<small>© FIX Ремонт, 2016</small>
 </footer>
 
+<script src="js/script.js"></script>
 </body>
 </html>

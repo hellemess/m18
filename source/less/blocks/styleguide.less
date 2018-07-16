@@ -1,0 +1,221 @@
+html > body > table.styleguide td
+{
+	padding: 50px;
+}
+
+html > body > table.styleguide button.button
+{
+	min-width: 250px;
+	padding-top: 14px;
+	padding-right: 30px;
+	padding-bottom: 12px;
+	padding-left: 30px;
+
+	text-align: center;
+
+	color: @tertiary-color;
+
+	background: @button-background;
+
+	border-radius: 30px;
+	box-shadow: @medium-shadow;
+
+	&.hover
+	{
+		background: @button-hover-background;
+
+		box-shadow: @large-shadow;
+	}
+}
+
+html > body > table.styleguide button.play
+{
+	width: 256px;
+	padding-top: 273px;
+	padding-bottom: 0;
+
+	font-size: @large-size;
+
+	color: @secondary-color;
+
+	background: url('../images/icons/play.svg') 1px 0 no-repeat transparent;
+
+	&.hover
+	{
+		background-image: url('../images/icons/play-hover.svg');
+		background-position: 0 0;
+	}
+}
+
+html > body > table.styleguide button.scroller
+{
+	padding-left: 55px;
+
+	line-height: @tiny-height;
+	text-align: left;
+
+	color: @secondary-color;
+
+	background: url('../images/icons/scroller.svg') 0 0 no-repeat transparent;
+
+	&.hover
+	{
+		background-image: url('../images/icons/scroller-hover.svg');
+		background-position: 5px 0;
+	}
+}
+
+html > body > table.styleguide a.contacts
+{
+	padding-left: 34px;
+
+	background: url('../images/icons/phone.svg') 0 0 no-repeat transparent;
+	background-size: contain;
+
+	&.hover
+	{
+		color: @secondary-color;
+	}
+}
+
+html > body > table.styleguide div
+{
+	position: relative;
+
+	margin-top: 20px;
+}
+
+html > body > table.styleguide div > input
+{
+	display: block;
+
+	width: 100%;
+	padding-top: 18px;
+	padding-right: 23px;
+	padding-bottom: 16px;
+	padding-left: 23px;
+
+	font: inherit;
+	font-size: @input-size;
+	line-height: @input-height;
+
+	border: @secondary-border;
+	border-radius: 4px;
+
+	&:focus
+	{
+		outline: none;
+
+		&::placeholder {
+			color: @tertiary-color;
+		}
+	}
+
+	&::placeholder {
+		color: @quaternary-color;
+	}
+
+	&.error
+	{
+		border-color: @secondary-color;
+	}
+}
+
+html > body > table.styleguide div > label
+{
+	position: absolute;
+	top: -8px;
+	left: 20px;
+
+	display: none;
+
+	padding-right: 4px;
+	padding-left: 4px;
+
+	font-size: @small-size;
+
+	color: @quaternary-color;
+	background: @body-background;
+}
+
+html > body > table.styleguide div > input.full + label,
+html > body > table.styleguide div > input:focus + label
+{
+	display: block;
+}
+
+html > body > table.styleguide div > input.error + label
+{
+	color: @secondary-color;
+}
+
+html > body > table.styleguide ul
+{
+	display: flex;
+
+	padding: 0;
+	margin: 0;
+
+	list-style: none;
+}
+
+html > body > table.styleguide ul > li > a
+{
+	display: block;
+
+	width: 50px;
+	height: 50px;
+	margin-right: 30px;
+
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: @button-background;
+
+	&.hover
+	{
+		background-color: @button-hover-background;
+
+		box-shadow: @large-shadow;
+	}
+}
+
+html > body > table.styleguide ul > li:last-child > a
+{
+	margin-right: 0;
+}
+
+html > body > table.styleguide ul > li > a.facebook
+{
+	background-image: url('../images/icons/facebook.svg');
+}
+
+html > body > table.styleguide ul > li > a.vk
+{
+	background-image: url('../images/icons/vk.svg');
+}
+
+html > body > table.styleguide ul > li > a.instagram
+{
+	background-image: url('../images/icons/instagram.svg');
+}
+
+html > body > table.styleguide a.email
+{
+	display: block;
+
+	padding-top: 7px;
+	padding-left: 44px;
+
+	background: url('../images/icons/email.svg') 0 center no-repeat transparent;
+
+	&.hover
+	{
+		color: @secondary-color;
+	}
+}
+
+html > body > table.styleguide a.email > span
+{
+	display: block;
+	border-bottom: @tertiary-border;
+}
